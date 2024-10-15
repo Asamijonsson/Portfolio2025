@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Header } from "./components/Header";
+// import { Header } from "./components/Header";
 import { Home } from "./components/Home";
+import { Nav } from "./components/Nav";
 import "./App.css";
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <Nav />
       <Home />
       <button onClick={() => setCount((count) => count + 1)}>
         count is {count}

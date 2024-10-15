@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import style from "./Header.module.css";
-import { Nav } from "../Nav/Nav";
+import { Nav } from "../Nav";
 
 export const Header = () => {
   const [navOpen, setnavOpen] = useState<boolean>(false);
@@ -20,7 +20,7 @@ export const Header = () => {
       </button>
       {!navOpen ? (
         <nav className={style.navbar}>
-          <Nav />{" "}
+          <Nav />
         </nav>
       ) : (
         <motion.nav
